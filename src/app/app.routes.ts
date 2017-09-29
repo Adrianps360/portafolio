@@ -4,12 +4,14 @@ import {
   AboutComponent,
   IndexComponent,
   ItemComponent,
-  SearchComponent
+  SearchComponent,
+  ContactoComponent
 } from "./components/index.paginas";
 
 const app_routes: Routes = [
   { path: 'home', component: IndexComponent },
   { path: 'about', component: AboutComponent  },
+  { path: 'contacto', component: ContactoComponent },
   { path: 'producto/:id', component: ItemComponent },
   { path: 'buscar/:termino', component: SearchComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
